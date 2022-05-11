@@ -1,30 +1,28 @@
+var a = new Array(3);
+var a1 = new Array(3);
+
+var multiplicador;
+var coluna = 0;
+var linha = 0;
+var pivo;
+var conta
 
 
+a[0] = [1, 2, 3]
+a[1] = [2, 3, 4]
+a[2] = [5, 6, 7]
 
 
+// var ml=  a[1][0]/a[0][0]
+// var  conta = a[1][0] - a[0][0] * ml
+// console.log(conta)
 
-
-document.getElementById("add-matriz").addEventListener('click', function () {
-    let linha = document.getElementById("linha").value;
-    let a = new Array(linha);
-    a[0] = [document.getElementById("a11").value, document.getElementById("a12").value, document.getElementById("a13").value]
-    a[1] = [document.getElementById("a21").value, document.getElementById("a22").value, document.getElementById("a23").value]
-    a[2] = [document.getElementById("a31").value, document.getElementById("a32").value, document.getElementById("a33").value]
-
-    console.log(a)
-
-    for (var i = 1; i < linha; i++) {
-        let pivo;
-        let ml2;
-        switch (i) {
-            case 1:
-                pivo = a[0][0]
-                ml =  a[1][1] / pivo
-        }
-
-       a[i].map(item => {
-           console.log(item)
-       })
+for (coluna; coluna < a.length; coluna++) {
+    var aux = new Array()
+    pivo = a[0][0]
+    for (linha; linha < a[coluna].length; linha++) {
+        multiplicador = a[coluna + 1][linha] / pivo
+        conta = a[coluna + 1][linha] - a[coluna][linha] * multiplicador
+        aux.push(conta)
     }
-})
-
+}
