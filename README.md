@@ -4,6 +4,17 @@ O método da Eliminação de Gauss consiste em transformar um sistema linear em 
 
 Assim, o método resume-se em aplicar sucessivas operações elementares em um sistema linear para o transformar num sistema de mais fácil resolução, tendo este as mesmas soluções que o original.
 
-A Eliminação de Gauss é muito simples, pois já estamos familiarizados com ela desde a Álgebra Linear através de escalonamento de matrizes. Apesar de existir diversas maneiras de escalonar uma uma matriz, o algoritmo da Eliminação de Gauss é o mais eficiente computacionalmente.... n-1)
-Se o pivot a(k)kk= 0 então há que efectuar troca de linhas.
-Se a(k)kk ¹ 0,
+- De começo executa "K" etapas até  o Número de linha - 1 ( que da a quantidade de iterações possiveis)
+
+- ele seta o primeiro cadidato a pivot como a[1][1]
+e faz uma varredura em busca de um pivot maior que ele, a[2][1], a[3][1]... ate encontrar um elemento maior que ele, ao encontrar ele troca de lugar, criando um novo pivot.
+
+-Na terceira etapa ele triangulariza a mmatriz, criando um número constante para multiplicação e linha( multiplicador de linha 2 = a[2][1] / pivot (a[1][1]) ,  multiplicador de linha 3 = a[3][1] /pivot (a[1][1])...)
+    logo em seguida ele realiza o calculo de para escalonamento da matriz, 
+    a[2][1] = (a[2][1] - a[2][1] / pivot) * a[1][1] 
+    a[2][2] = (a[2][2] - a[2][1] / pivot) * a[1][2] ...
+    (assim suctivamente)
+
+
+
+
