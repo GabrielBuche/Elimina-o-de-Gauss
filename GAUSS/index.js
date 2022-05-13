@@ -7,6 +7,12 @@ a[0] = [2, 4, 1, 7];
 a[1] = [3, 2, 8, 13];
 a[2] = [6, 2, -1, 7];
 
+
+// popular a matrix x
+for (i = 0; i < N_linha; i++) {
+    x[i] = 0
+}
+
 // executa as etapas da eleminação de gauss
 for (var k = 0; k < N_linha - 1; k++) {
     var pivot = a[k][k] // candidato a pivot
@@ -31,20 +37,23 @@ for (var k = 0; k < N_linha - 1; k++) {
     }
 }
 
+
+
+
 //calculador valores para x atraves da retrosubstituição
+for (var i = 0; x.legnth > i; i++) {
+    x.push(0);
+    console.log("caiu aquio")
+
+}
 x[N_linha - 1] = a[N_linha - 1][N_linha] / a[N_linha - 1][N_linha - 1]
 
 for (var linha = N_linha - 2; linha >= 0; linha--) {
     var aux1 = 0;
     for (var coluna = N_linha - 1; coluna >= 0; coluna--) {
-        console.log( a[linha][coluna])
-        aux1 = aux1 + x[coluna] * a[linha][coluna]
-
-
+        aux1 += x[coluna] * a[linha][coluna]
     }
-
-    x[linha] = (a[linha][coluna] - aux1) / a[linha][linha]
-
+    x[linha] = (a[linha][N_linha] - aux1) / a[linha][linha]
     aux1 = 0;
 
 }
