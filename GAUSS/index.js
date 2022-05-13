@@ -4,7 +4,7 @@ var results;
 var lines;
 var columns;
 
-// popular a matrix results
+// adiciona linha e colunas para ser inserido os valores da matrix
 function addMatrix() {
 
     lines = document.getElementById("getLines").value;
@@ -59,7 +59,7 @@ function calc() {
         results[i] = 0;
     }
 
-    //capturar matrix
+    //popula a  matrix
     for (var i = 0; i < N_lines; i++) {
         let auxA = new Array;
         for (var j = 0; j < columns; j++) {
@@ -70,7 +70,9 @@ function calc() {
 
     // executa as etapas da eleminação de gauss
     for (var k = 0; k < N_lines - 1; k++) {
+
         var pivot = a[k][k] // candidato a pivot
+
         //assume um valor para o pivot
         for (var line = k + 1; line < N_lines; line++) {
             if (Math.abs(a[line][k]) > Math.abs(pivot)) {
