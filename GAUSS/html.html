@@ -12,21 +12,28 @@
             <br />
             <div style="display: flex; justify-content: center; align-items: center;">
                 <label for="linha">Ordem da matriz:</label>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
                 <input class="inputOrdem" type="number" id="getLines" class="form-control" />
                 <a>X</a>
                 <input class="inputOrdem" type="number" id="getColumns" class="form-control" />
-            
             </div>
-            <div style="display: flex; justify-content: center; align-items: center; margin: 20px;"> 
+            <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
                 <button onclick="addMatrix()">criar</button>
             </div>
             <br />
-            <table id="matrixInputContainer"></table>
-            <br/>
+            <table id="inputMatrix"></table>
+            <br />
             <div style="display: flex; justify-content: center; align-items: center;">
-                <button id="calc">Calcular</button>
+                <button onclick="calc()">Calcular</button>
             </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem; ">
+                Resultado:
+            </div>
+            <div id="ViewResults"
+                style="display: flex; justify-content: center; align-items: center; margin-top: 2rem; font-size: 1.5rem;">
 
+            </div>
             <br />
         </fieldset>
     </div>
