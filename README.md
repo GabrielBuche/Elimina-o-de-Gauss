@@ -1,8 +1,6 @@
+ descrição do codigo
 
-# Elimina-o-de-Gauss
 
-
-# descrrição do codigo
 
 O método da Eliminação de Gauss consiste em transformar um sistema linear em um sistema linear triangular superior equivalente, pois um sistema dessa forma pode ser resolvido diretamente com a resolução retroativa.
 
@@ -24,9 +22,10 @@ onde substitui os valores de X e calcula o resultado de tras para frente, pois a
 
 para teste foi utilizado  a matrix
 
-[2, 4, 1, 7];
-[3, 2, 8, 13];
-[6, 2, -1, 7];
+| 2 	| 4 	| 1  	| 7  	|
+|---	|---	|----	|----	|
+| 3 	| 2 	| 8  	| 13 	|
+| 6 	| 2 	| -1 	| 7  	|
 
 que está no livro de calculo númerico
 resolução da matrixa => R: [1, 1, 1]
