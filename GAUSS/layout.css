@@ -2,6 +2,17 @@
     height: 25;
     width: 50;
 }
+
+.line{
+  border-right: 1px solid black;
+  margin-right: 5;
+
+}
+
 .C-I-matriz{
   display: flex;
+}
+
+.matrixA{
+  margin-right: 150;
 }

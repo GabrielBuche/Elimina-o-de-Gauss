@@ -10,32 +10,30 @@
     <div class="col-md-4 col-xs-12 col-sm-4">
         <fieldset>
             <br />
-            <div class="C-I-matriz">
+            <div style="display: flex; justify-content: center; align-items: center;">
                 <label for="linha">Ordem da matriz:</label>
-                <input class="inputOrdem" type="number" id="linha" class="form-control" />
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+                <input class="inputOrdem" type="number" id="getLines" class="form-control" />
                 <a>X</a>
-                <input class="inputOrdem" type="number" id="coluna" class="form-control" />
+                <input class="inputOrdem" type="number" id="getColumns" class="form-control" />
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+                <button onclick="addMatrix()">criar</button>
             </div>
             <br />
-            <div>
-                <input class="inputOrdem" type="number" id="a11" class="form-control" />
-                <input class="inputOrdem" type="number" id="a12" class="form-control" />
-                <input class="inputOrdem" type="number" id="a13" class="form-control" />
-            </div>
+            <table id="inputMatrix"></table>
             <br />
-            <div>
-                <input class="inputOrdem" type="number" id="a21" class="form-control" />
-                <input class="inputOrdem" type="number" id="a22" class="form-control" />
-                <input class="inputOrdem" type="number" id="a23" class="form-control" />
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <button onclick="calc()">Calcular</button>
             </div>
-            <br />
-            <div>
-                <input class="inputOrdem" type="number" id="a31" class="form-control" />
-                <input class="inputOrdem" type="number" id="a32" class="form-control" />
-                <input class="inputOrdem" type="number" id="a33" class="form-control" />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem; ">
+                Resultado:
             </div>
-            <br />
-            <button id="add-matriz">criar matriz</button>
+            <div id="ViewResults"
+                style="display: flex; justify-content: center; align-items: center; margin-top: 2rem; font-size: 1.5rem;">
+
+            </div>
             <br />
         </fieldset>
     </div>
