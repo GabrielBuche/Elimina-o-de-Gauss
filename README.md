@@ -1,5 +1,5 @@
  # Metodo de eliminação de gauss
- #h2 descrição do codigo
+ ## descrição do codigo
  
 O método da Eliminação de Gauss consiste em transformar um sistema linear em um sistema linear triangular superior equivalente, pois um sistema dessa forma pode ser resolvido diretamente com a resolução retroativa.
 
@@ -33,13 +33,13 @@ resolução da matrixa => R: **[1, 1, 1]**
 obs: devido a forma com que o JS e o computador operam os números de pontos 
 flutuantes algumas das matrix inseridas podem apresentar uma inprecisão...
 
-#h2 fucntions
+## fucntions
 
-addMatrix => função acionada ao clickar no botão criar, adiciona as linhas e colunas da matrix para que possa ser inserido valores
+*addMatrix* => função acionada ao clickar no botão criar, adiciona as linhas e colunas da matrix para que possa ser inserido valores
 
-calc => calcula o resultado da matrix
+*calc* => calcula o resultado da matrix
 
-#h2 variaveis
+## variaveis
 **N_lines** => numero de linhas da matrix 
 **a array** => que arrmazena a matrix
 **results** => resultado da matrix
