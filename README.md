@@ -33,7 +33,7 @@ resolução da matrixa => R: **[1, 1, 1]**
 obs: devido a forma com que o JS e o computador operam os números de pontos 
 flutuantes algumas das matrix inseridas podem apresentar uma inprecisão...
 
-## fucntions
+## functions
 
 *addMatrix* => função acionada ao clickar no botão criar, adiciona as linhas e colunas da matrix para que possa ser inserido valores
 
